@@ -51,13 +51,14 @@ function deleteUser(){
 
 
 }
-
-while (true){
+x=true
+while (x){
     console.log("Enter Value")
     console.log("1 : Create User")
     console.log("2 : Get all Users")
     console.log("3 : Update User")
     console.log("4 : Delete User")
+    console.log("5 : Exit")
     const value=prompt()
     switch (value){
         case '1':
@@ -72,10 +73,12 @@ while (true){
         case '4':
             deleteUser()
             break
+        case '5':
+                x=false
+            break
         
         default:
             console.log("enter valid input ")
     }
-
 
 }
